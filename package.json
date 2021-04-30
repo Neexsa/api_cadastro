@@ -9,8 +9,11 @@
   "author": "Gabriel Ferreira Trindade",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "cors": "^2.8.5",
+    "dotenv-safe": "^8.2.0",
     "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
     "neo4j-driver": "^4.2.3"
   }
 }
