@@ -3,6 +3,12 @@ const app = express();
 const path = require('path');
 let cors = require('cors');
 let bodyParser = require('body-parser');    //Extract data from Express
+const fs = require('fs')
+
+const options = {
+    key: fs.readFileSync('test/fixtures/keys/agent2-key.pem'),
+    cert: fs.readFileSync('test/fixtures/keys/agent2-cert.pem')
+}
 
 app.use(cors())
 

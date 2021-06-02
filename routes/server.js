@@ -19,5 +19,8 @@ router.post('/novo-rdo', controller.novoRdo)
 
 router.get('/dominio/clientes', controller.dominioClientes)
 router.get('/dominio/projetosClientes', controller.dominioProjetosClientes)
+router.get('/dominio/colaboradores', controller.colaboradores)
 
+router.post('/gerar-pdf', controller.gerarPdf)
+router.post('/aws-pdf', controller.awsPdf)
 module.exports = router;

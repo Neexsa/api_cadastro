@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+	<p><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:20px"><strong>HTG</strong></span></span></p>
+
+	<hr />
+	<p style="text-align:center; padding: 0px"><span style="font-family:Arial,Helvetica,sans-serif; padding: 0px"><span style="font-size:20px; padding: 0px"><strong>RELAT&Oacute;RIO DI&Aacute;RIO DE OBRA (RDO)</strong></span></span></p>
+
+	<p style="padding: 0px; margin: 0px;">&nbsp;</p>
+
+	<table align="center" border="0" cellpadding="1" cellspacing="0" style="width:500px; padding: 0px">
+		<thead>
+			<tr>
+				<th scope="col" style="background-color:#ffffff; border-color:#ffffff; text-align:center; vertical-align:middle; width:33.333%"><span style="font-size:16px"><strong>Data In&iacute;cio</strong></span></th>
+				<th scope="col" style="background-color:#ffffff; border-color:#ffffff; text-align:center; vertical-align:middle; width:33.333%"><span style="font-size:16px"><strong>Dia da Semana</strong></span></th>
+				<th scope="col" style="background-color:#ffffff; border-color:#ffffff; text-align:center; vertical-align:middle; width:33.333%"><span style="font-size:16px"><strong>ID / RDO</strong></span></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td style="background-color:#ffffff; border-color:#ffffff; text-align:center; vertical-align:middle; width:33.333%"><%= body.dataRdo %></td>
+				<td style="background-color:#ffffff; border-color:#ffffff; text-align:center; vertical-align:middle; width:33.333%"><%= body.diaSemana %></td>
+				<td style="background-color:#ffffff; border-color:#ffffff; text-align:center; vertical-align:middle; width:33.333%"><%= body.dataIDRDO %></td>
+			</tr>
+		</tbody>
+	</table>
+
+	<p style="padding: 0px; margin: 0px;">&nbsp;</p>
+
+	<table align="center" border="0" cellpadding="0" cellspacing="0" style="height:0px; width:1100px; padding: 0px">
+		<tbody>
+			<tr>
+				<td style="background-color:#cccccc; border-color:#cccccc; height:1%; text-align:left; vertical-align:middle; width:33.333%">&nbsp;
+				<table align="center" border="1" cellpadding="3" cellspacing="0" style="width:1050px">
+					<caption>
+					<p style="text-align:left"><span style="font-size:16px"><strong>Identifica&ccedil;&atilde;o:</strong></span></p>
+					</caption>
+					<tbody>
+						<tr>
+							<td style="background-color:#ffffff; border-color:#ffffff; height:30px; text-align:left; vertical-align:middle; width:33.333%"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif">Cliente: <%= body.nomeCliente %></span></span></td>
+							<td style="background-color:#ffffff; border-color:#ffffff; height:30px; text-align:left; vertical-align:middle; width:33.333%"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif">Projeto: <%= body.nomeProjetos %></span></span></td>
+							<td style="background-color:#ffffff; border-color:#ffffff; height:30px; text-align:left; vertical-align:middle; width:33.333%"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif">&Aacute;rea de Atua&ccedil;&atilde;o: <%= body.areaAtuacao %></span></span></td>
+						</tr>
+						<tr>
+							<td style="background-color:#ffffff; border-color:#ffffff; height:30px; text-align:left; vertical-align:middle; width:33.333%"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif">Carta Chamada: <%= body.cartaChamada %></span></span></td>
+							<td style="background-color:#ffffff; border-color:#ffffff; height:30px; text-align:left; vertical-align:middle; width:33.333%"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif">Fiscal: <%= body.nomeFiscal %></span></span></td>
+							<td style="background-color:#ffffff; border-color:#ffffff; height:30px; text-align:left; vertical-align:middle; width:33.333%"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif">Encarregado: <%= body.nomeEncarregado %></span></span></td>
+						</tr>
+					</tbody>
+				</table>
+				</td>
+			</tr>
+			<tr>
+				<td style="background-color:#cccccc; border-color:#cccccc; height:1%; text-align:left; vertical-align:middle; width:33.333%">&nbsp;</td>
+			</tr>
+			<tr>
+				<td style="background-color:#cccccc; border-color:#cccccc; height:1%; text-align:left; vertical-align:middle; width:33.333%">
+				<table align="center" border="1" cellpadding="3" cellspacing="1" style="width:1050px">
+					<caption>
+					<p style="text-align:left"><span style="font-size:16px"><strong>Informa&ccedil;&otilde;es do Projeto:</strong></span></p>
+					</caption>
+					<tbody>
+						<tr>
+							<td style="background-color:#ffffff; border-color:#ffffff; height:30px; vertical-align:middle; width:20%"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif">Prazo da Atividade: <%= body.prazoAtividade %></span></span></td>
+							<td style="background-color:#ffffff; border-color:#ffffff; height:30px; text-align:left; vertical-align:middle; width:20%"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif">Dias Decorridos: <%= body.diasDecorridos %></span></span></td>
+							<td style="background-color:#ffffff; border-color:#ffffff; height:30px; text-align:left; vertical-align:middle; width:20%"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif">Prorroga&ccedil;&atilde;o: <%= body.prorrogacao %></span></span></td>
+							<td style="background-color:#ffffff; border-color:#ffffff; height:30px; text-align:left; vertical-align:middle; width:20%"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif">Dias Restantes: <%= body.diasRestantes %></span></span></td>
+							<td style="background-color:#ffffff; border-color:#ffffff; height:30px; text-align:left; vertical-align:middle; width:20%"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif">Dias De Atrazo: <%= body.diasDeAtrazos %></span></span></td>
+						</tr>
+					</tbody>
+				</table>
+				</td>
+			</tr>
+			<tr>
+				<td style="background-color:#cccccc; border-color:#cccccc; height:1%; text-align:left; vertical-align:middle; width:33.333%">&nbsp;</td>
+			</tr>
+			<tr>
+				<td style="background-color:#cccccc; border-color:#cccccc; height:1%; text-align:left; vertical-align:middle; width:33.333%">
+				<table align="center" border="1" cellpadding="3" cellspacing="1" style="width:1050px">
+					<caption>
+					<p style="text-align:left"><span style="font-size:16px"><strong>Condi&ccedil;&atilde;o do Tempo:</strong></span></p>
+					</caption>
+					<tbody>
+						<tr>
+							<td style="background-color:#ffffff; border-color:#ffffff; height:30px; text-align:left; vertical-align:middle; width:3.33%"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif">Dia: <%= body.condicaoManha %></span></span></td>
+							<td style="background-color:#ffffff; border-color:#ffffff; height:30px; text-align:left; vertical-align:middle; width:3.33%"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif">Tarde: <%= body.condicaoTarde %></span></span></td>
+							<td style="background-color:#ffffff; border-color:#ffffff; height:30px; text-align:left; vertical-align:middle; width:3.33%"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif">Noite: <%= body.condicaoNoite %></span></span></td>
+						</tr>
+					</tbody>
+				</table>
+				</td>
+			</tr>
+			<tr>
+				<td style="background-color:#cccccc; border-color:#cccccc; height:0%; text-align:left; vertical-align:middle; width:33.333%">&nbsp;</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<p style="padding: 0px; margin: 0px;">&nbsp;</p>
+
+	<table align="center" border="0" cellpadding="0" cellspacing="0" style="height:0px; width:1100px; padding: 0px">
+		<tbody>
+			<tr>
+				<td style="background-color:#cccccc; border-color:#cccccc; height:0px; text-align:left; vertical-align:middle">&nbsp;
+				<table align="center" border="1" cellpadding="3" cellspacing="0.5" style="width:1050px">
+					<caption><span style="font-size:16px"><strong>Efetivo</strong></span></caption>
+					<tbody>
+						<tr>
+							<td rowspan="2" style="background-color:#ffffff; border-color:#ffffff; text-align:center; vertical-align:middle; width:87px"><span style="font-size:12px"><strong>Registro</strong></span></td>
+							<td rowspan="2" style="background-color:#ffffff; border-color:#ffffff; text-align:center; vertical-align:middle; width:186px"><span style="font-size:12px"><strong>Colaboradores</strong></span></td>
+							<td rowspan="2" style="background-color:#ffffff; border-color:#ffffff; text-align:center; vertical-align:middle; width:106px"><span style="font-size:12px"><strong>Fun&ccedil;&atilde;o</strong></span></td>
+							<td colspan="3" style="background-color:#ffffff; border-color:#ffffff; text-align:center; vertical-align:middle; width:12.5%"><span style="font-size:12px"><strong>Hora Normal</strong></span></td>
+							<td colspan="3" style="background-color:#ffffff; border-color:#ffffff; text-align:center; vertical-align:middle; width:12.5%"><span style="font-size:12px"><strong>Hora Extra Seg/Sab</strong></span></td>
+							<td colspan="3" style="background-color:#ffffff; border-color:#ffffff; text-align:center; vertical-align:middle; width:12.5%"><span style="font-size:12px"><strong>Hora Normal Notur</strong></span></td>
+							<td colspan="3" style="background-color:#ffffff; border-color:#ffffff; text-align:center; vertical-align:middle; width:12.5%"><span style="font-size:12px"><strong>Hora Extra Noturna</strong></span></td>
+							<td colspan="3" style="background-color:#ffffff; border-color:#ffffff; text-align:center; vertical-align:middle; width:12.5%"><span style="font-size:12px"><strong>Hora Extra Dom/Fer</strong></span></td>
+						</tr>
+						<tr>
+							<td style="background-color:#ffffff; border-color:#ffffff; text-align:center; vertical-align:middle; width:3px"><span style="font-size:12px">Inicio</span></td>
+							<td style="background-color:#ffffff; border-color:#ffffff; text-align:center; vertical-align:middle; width:3px"><span style="font-size:12px">Term.</span></td>
+							<td style="background-color:#ffffff; border-color:#ffffff; text-align:center; vertical-align:middle; width:3px"><span style="font-size:12px">Total</span></td>
+							<td style="background-color:#ffffff; border-color:#ffffff; text-align:center; vertical-align:middle; width:3px"><span style="font-size:12px">Inicio</span></td>
+							<td style="background-color:#ffffff; border-color:#ffffff; text-align:center; vertical-align:middle; width:3px"><span style="font-size:12px">Term.</span></td>
+							<td style="background-color:#ffffff; border-color:#ffffff; text-align:center; vertical-align:middle; width:3px"><span style="font-size:12px">Total</span></td>
+							<td style="background-color:#ffffff; border-color:#ffffff; text-align:center; vertical-align:middle; width:3px"><span style="font-size:12px">Inicio</span></td>
+							<td style="background-color:#ffffff; border-color:#ffffff; text-align:center; vertical-align:middle; width:3px"><span style="font-size:12px">Term.</span></td>
+							<td style="background-color:#ffffff; border-color:#ffffff; text-align:center; vertical-align:middle; width:3px"><span style="font-size:12px">Total</span></td>
+							<td style="background-color:#ffffff; border-color:#ffffff; text-align:center; vertical-align:middle; width:3px"><span style="font-size:12px">Inicio</span></td>
+							<td style="background-color:#ffffff; border-color:#ffffff; text-align:center; vertical-align:middle; width:3px"><span style="font-size:12px">Term.</span></td>
+							<td style="background-color:#ffffff; border-color:#ffffff; text-align:center; vertical-align:middle; width:3px"><span style="font-size:12px">Total</span></td>
+							<td style="background-color:#ffffff; border-color:#ffffff; text-align:center; vertical-align:middle; width:3px"><span style="font-size:12px">Inicio</span></td>
+							<td style="background-color:#ffffff; border-color:#ffffff; text-align:center; vertical-align:middle; width:3px"><span style="font-size:12px">Term.</span></td>
+							<td style="background-color:#ffffff; border-color:#ffffff; text-align:center; vertical-align:middle; width:3px"><span style="font-size:12px">Total</span></td>
+						</tr>
+						<% body.efetivos.forEach(efetivos => { %>
+						<tr>
+							<td style="background-color:#ffffff; border-color:#ffffff; text-align:center; vertical-align:middle; width:87px; font-size:12px"><%= efetivos.idEfetivo %></td>
+							<td style="background-color:#ffffff; border-color:#ffffff; text-align:center; vertical-align:middle; width:186px; font-size:12px"><%= efetivos.nomeEfetivo %></td>
+							<td style="background-color:#ffffff; border-color:#ffffff; text-align:center; vertical-align:middle; width:106px; font-size:12px"><%= efetivos.funcaoEfetivo %></td>
+							<td style="background-color:#ffffff; border-color:#ffffff; text-align:center; vertical-align:middle; width:3px; font-size:12px"><%= efetivos.horaNormalInicio %></td>
+							<td style="background-color:#ffffff; border-color:#ffffff; text-align:center; vertical-align:middle; width:3px; font-size:12px"><%= efetivos.horaNormalTermino %></td>
+							<td style="background-color:#ffffff; border-color:#ffffff; text-align:center; vertical-align:middle; width:3px; font-size:12px"><%= efetivos.horaNormalTotal %></td>
+							<td style="background-color:#ffffff; border-color:#ffffff; text-align:center; vertical-align:middle; width:3px; font-size:12px"><%= efetivos.horaNormalExtraInicio %></td>
+							<td style="background-color:#ffffff; border-color:#ffffff; text-align:center; vertical-align:middle; width:3px; font-size:12px"><%= efetivos.horaNormalExtraTermino %></td>
+							<td style="background-color:#ffffff; border-color:#ffffff; text-align:center; vertical-align:middle; width:3px; font-size:12px"><%= efetivos.horaNormalExtraTotal %></td>
+							<td style="background-color:#ffffff; border-color:#ffffff; text-align:center; vertical-align:middle; width:3px; font-size:12px"><%= efetivos.horaNormalNoturnaInicio %></td>
+							<td style="background-color:#ffffff; border-color:#ffffff; text-align:center; vertical-align:middle; width:3px; font-size:12px"><%= efetivos.horaNormalNoturnaTermino %></td>
+							<td style="background-color:#ffffff; border-color:#ffffff; text-align:center; vertical-align:middle; width:3px; font-size:12px"><%= efetivos.horaNormalNoturnaTotal %></td>
+							<td style="background-color:#ffffff; border-color:#ffffff; text-align:center; vertical-align:middle; width:3px; font-size:12px"><%= efetivos.horaExtraNoturnaInicio %></td>
+							<td style="background-color:#ffffff; border-color:#ffffff; text-align:center; vertical-align:middle; width:3px; font-size:12px"><%= efetivos.horaExtraNoturnaTermino %></td>
+							<td style="background-color:#ffffff; border-color:#ffffff; text-align:center; vertical-align:middle; width:3px; font-size:12px"><%= efetivos.horaExtraNoturnaTotal %></td>
+							<td style="background-color:#ffffff; border-color:#ffffff; text-align:center; vertical-align:middle; width:3px; font-size:12px"><%= efetivos.horaExtraFdsInicio %></td>
+							<td style="background-color:#ffffff; border-color:#ffffff; text-align:center; vertical-align:middle; width:3px; font-size:12px"><%= efetivos.horaExtraFdsTermino %></td>
+							<td style="background-color:#ffffff; border-color:#ffffff; text-align:center; vertical-align:middle; width:3px; font-size:12px"><%= efetivos.horaExtraFdsTotal %></td>
+						</tr>
+						<% }); %>
+					</tbody>
+				</table>
+				</td>
+			</tr>
+			<tr>
+				<td style="background-color:#cccccc; border-color:#cccccc; height:0%; text-align:left; vertical-align:middle; width:33.333%">&nbsp;</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<p style="padding: 0px; margin: 0px;">&nbsp;</p>
+
+	<table align="center" border="0" cellpadding="1" cellspacing="0" style="width:1100px; padding: 0px">
+		<tbody>
+			<tr>
+				<td style="background-color:#cccccc; border-color:#cccccc; height:0px; text-align:left; vertical-align:middle">&nbsp;
+				<table align="center" border="1" cellpadding="3" cellspacing="0.5" style="width:1050px">
+					<caption><span style="font-size:16px"><strong>Observa&ccedil;&otilde;es:</strong></span><span style="font-size:16px"><strong>&nbsp;</strong></span></caption>
+					<tbody>
+						<tr>
+							<td style="background-color:#ffffff; border-color:#ffffff; text-align:left; vertical-align:middle; width:80%"><span style="font-size:12px"><strong>Houve DDS neste dia?</strong></span></td>
+							<td style="background-color:#ffffff; border-color:#ffffff; text-align:center; vertical-align:middle; font-size:12px; width:20%"><%= body.opcoesDDS %></td>
+						</tr>
+						<tr>
+							<td style="background-color:#ffffff; border-color:#ffffff; text-align:left; vertical-align:middle; width:80%"><span style="font-size:12px"><strong>Houve algum preju&iacute;zo material ou de equipamento neste dia?</strong></span></td>
+							<td style="background-color:#ffffff; border-color:#ffffff; text-align:center; vertical-align:middle; font-size:12px; width:20%"><%= body.opcoesPrejuizo %></td>
+						</tr>
+						<tr>
+							<td style="background-color:#ffffff; border-color:#ffffff; text-align:left; vertical-align:middle; width:80%"><span style="font-size:12px"><strong>Houve viola&ccedil;&otilde;es de seguran&ccedil;a neste dia?</strong></span></td>
+							<td style="background-color:#ffffff; border-color:#ffffff; text-align:center; vertical-align:middle; font-size:12px; width:20%"><%= body.opcoesViolacao %></td>
+						</tr>
+						<tr>
+							<td style="background-color:#ffffff; border-color:#ffffff; text-align:left; vertical-align:middle; width:80%"><span style="font-size:12px"><strong>Houve ociosidade ocorrida por acidentes neste dia?</strong></span></td>
+							<td style="background-color:#ffffff; border-color:#ffffff; text-align:center; vertical-align:middle; font-size:12px; width:20%"><%= body.opcoesOciosidade %></td>
+						</tr>
+					</tbody>
+				</table>
+				</td>
+			</tr>
+			<tr>
+				<td style="background-color:#cccccc; border-color:#cccccc; height:0%; text-align:left; vertical-align:middle; width:33.333%">&nbsp;</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<p style="padding: 0px; margin: 0px;">&nbsp;</p>
+
+	<table align="center" border="0" cellpadding="1" cellspacing="0" style="width:1100px; padding: 0px">
+		<tbody>
+			<tr>
+				<td style="background-color:#cccccc; border-color:#cccccc; height:0px; width:25%">&nbsp;
+				<table align="center" border="1" cellpadding="3" cellspacing="0.5" style="width:1050px">
+					<caption><span style="font-size:16px"><strong>Atividades em Execu&ccedil;&atilde;o:</strong></span></caption>
+					<tbody>
+						<tr>
+							<td rowspan="2" style="background-color:#ffffff; border-color:#ffffff; text-align:left; vertical-align:middle; width:50%"><span style="font-size:12px"><strong>Servi&ccedil;o: <%= body.servico %></strong></span></td>
+							<td style="background-color:#ffffff; border-color:#ffffff; text-align:left; vertical-align:middle; width:25%"><span style="font-size:12px"><strong>In&iacute;cio Previsto: <%= body.inicioPrevisto %></strong></span></td>
+							<td style="background-color:#ffffff; border-color:#ffffff; text-align:left; vertical-align:middle; width:25%"><span style="font-size:12px"><strong>T&eacute;rmino Previsto: <%= body.terminoPrevisto %></strong></span></td>
+						</tr>
+						<tr>
+							<td style="background-color:#ffffff; border-color:#ffffff; text-align:left; vertical-align:middle; width:25%"><span style="font-size:12px"><strong>In&iacute;cio Real: <%= body.inicioReal %></strong></span></td>
+							<td style="background-color:#ffffff; border-color:#ffffff; text-align:left; vertical-align:middle; width:25%"><span style="font-size:12px"><strong>T&eacute;rmino Real: <%= body.terminoReal %></strong></span></td>
+						</tr>
+					</tbody>
+				</table>
+
+				<table align="center" border="1" cellpadding="3" cellspacing="0.5" style="width:1050px">
+					<thead>
+						<tr>
+							<th scope="col" style="background-color:#ffffff; border-color:#ffffff; width:8.333%"><span style="font-size:12px">Item</span></th>
+							<th scope="col" style="background-color:#ffffff; border-color:#ffffff; width:8.333%"><span style="font-size:12px">Quant. Cont.</span></th>
+							<th scope="col" style="background-color:#ffffff; border-color:#ffffff; width:8.333%"><span style="font-size:12px">Real Acum.</span></th>
+							<th scope="col" style="background-color:#ffffff; border-color:#ffffff; width:8.333%"><span style="font-size:12px">Quant Real</span></th>
+							<th scope="col" style="background-color:#ffffff; border-color:#ffffff; width:8.333%"><span style="font-size:12px">Saldo Cont</span></th>
+							<th scope="col" style="background-color:#ffffff; border-color:#ffffff; width:8.333%"><span style="font-size:12px">UN</span></th>
+							<th scope="col" style="background-color:#ffffff; border-color:#ffffff; width:40%"><span style="font-size:12px">Descri&ccedil;&atilde;o do Servi&ccedil;o</span></th>
+							<th scope="col" style="background-color:#ffffff; border-color:#ffffff; width:10%"><span style="font-size:12px">Refer&ecirc;ncia</span></th>
+						</tr>
+					</thead>
+					<tbody>
+						<% body.atividades.forEach(atividades => { %>
+						<tr>
+							<td style="background-color:#ffffff; border-color:#ffffff; text-align:center; vertical-align:middle; font-size:12px"><%= atividades.id %></td>
+							<td style="background-color:#ffffff; border-color:#ffffff; text-align:center; vertical-align:middle; font-size:12px"><%= atividades.quantCont %></td>
+							<td style="background-color:#ffffff; border-color:#ffffff; text-align:center; vertical-align:middle; font-size:12px"><%= atividades.realAcum %></td>
+							<td style="background-color:#ffffff; border-color:#ffffff; text-align:center; vertical-align:middle; font-size:12px"><%= atividades.quantReal %></td>
+							<td style="background-color:#ffffff; border-color:#ffffff; text-align:center; vertical-align:middle; font-size:12px"><%= atividades.saldoCont %></td>
+							<td style="background-color:#ffffff; border-color:#ffffff; text-align:center; vertical-align:middle; font-size:12px"><%= atividades.unidade %></td>
+							<td style="background-color:#ffffff; border-color:#ffffff; text-align:center; vertical-align:middle; font-size:12px"><%= atividades.descricao %></td>
+							<td style="background-color:#ffffff; border-color:#ffffff; text-align:center; vertical-align:middle; font-size:12px"><%= atividades.referencia %></td>
+						</tr>
+						<% }); %>
+					</tbody>
+				</table>
+				</td>
+			</tr>
+			<tr>
+				<td style="background-color:#cccccc; border-color:#cccccc; height:0%; text-align:left; vertical-align:middle; width:33.333%">&nbsp;</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<p style="padding: 0px; margin: 0px;">&nbsp;</p>
+
+	<table align="center" border="0" cellpadding="0" cellspacing="0" style="width:1100px; padding: 0px">
+		<tbody>
+			<tr>
+				<td style="background-color:#cccccc; border-color:#cccccc; height:0px">&nbsp;
+				<table align="center" border="1" cellpadding="3" cellspacing="0.5" style="width:1050px">
+					<caption><span style="font-size:16px"><strong>Coment&aacute;rio Contratada:</strong></span></caption>
+					<tbody>
+						<tr>
+							<td style="background-color:#ffffff; border-color:#ffffff; text-align:left; vertical-align:top">
+							<p><%= body.comentarios %></p>
+
+							<p>&nbsp;</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				</td>
+			</tr>
+			<tr>
+				<td style="background-color:#cccccc; border-color:#cccccc; height:0%; text-align:left; vertical-align:middle; width:33.333%">&nbsp;</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<p style="padding: 0px; margin: 0px;">&nbsp;</p>
+
+	<table align="center" border="0" cellpadding="0" cellspacing="0" style="width:1100px; padding: 0px">
+		<tbody>
+			<tr>
+				<td style="background-color:#ffffff; border-color:#ffffff; height:0px; text-align:center; vertical-align:middle; width:50%">
+				<p><u>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</u></p>
+
+				<p>Respons&aacute;vel Contratada</p>
+
+				<p>Data:&nbsp;</p>
+				</td>
+				<td style="background-color:#ffffff; border-color:#ffffff; height:0px; text-align:center; vertical-align:middle; width:50%">
+				<p><u>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</u></p>
+
+				<p>Respons&aacute;vel VSB</p>
+
+				<p>Data:</p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>
